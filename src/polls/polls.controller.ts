@@ -1,7 +1,7 @@
-import {Body, Controller, Delete, Get, Param, Post} from '@nestjs/common';
+import {Body, Controller, Delete, Get, Param, Post, UsePipes, ValidationPipe} from '@nestjs/common';
 import {PollsService} from './polls.service';
 import {CreatePollDto} from './dto/create-poll.dto';
-import {ApiOperation, ApiTags} from "@nestjs/swagger";
+import {ApiBody, ApiOperation} from "@nestjs/swagger";
 import {CreateVoteDto} from "./dto/create-vote.dto";
 
 @Controller('polls')
